@@ -1,0 +1,76 @@
+.add {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 1400px;
+    padding: 50px 0px;
+
+    h1 {
+      width: max-content;
+      margin-bottom: 30px;
+      color: gray;
+      font-weight: 300;
+    }
+
+    .sections {
+      display: flex;
+      justify-content: space-between;
+      gap: 100px;
+
+      label {
+        color: gray;
+        font-size: 18px;
+      }
+
+      .info,
+      .details {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        input,
+        select,
+        textarea {
+          padding: 20px;
+        }
+
+        button {
+          border: none;
+          padding: 20px;
+          color: white;
+          font-weight: 500;
+          font-size: 18px;
+          background-color: #1dbf73;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .container {
+      width: 100%;
+      padding: 20px;
+
+      h1 {
+        font-size: 24px;
+      }
+
+      .sections {
+        flex-direction: column;
+        gap: 20px;
+
+        label {
+          font-size: 16px;
+        }
+
+        .info,
+        .details {
+          flex: none;
+        }
+      }
+    }
+  }
+}

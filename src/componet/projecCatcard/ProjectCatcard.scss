@@ -1,0 +1,86 @@
+.projectCard {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  outline:none;
+  flex-direction: column;
+ justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeIn 0.5s forwards;
+
+     @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+     }
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .texts {
+      flex: 1;
+
+      h2 {
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      span {
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+
+    img {
+      height: 100%;
+    }
+
+    .info {
+      flex-wrap: nowrap;
+      gap: 10px;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+
+      .texts {
+        h2 {
+          font-size: 16px;
+        }
+
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.app-container {
+  background-color: white;
+  height: 100vh;
+  transition: background-color 0.3s ease-in-out;
+
+  &.dark-mode {
+    background-color: black;
+  }
+}
+
+.toggle-button {
+  cursor: pointer;
+}

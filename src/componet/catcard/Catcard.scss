@@ -1,0 +1,111 @@
+.catCard {
+  position: relative;
+  width: 100%;
+  height: 400px;
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s ease;
+      transform: scale(1);
+      overflow: hidden;
+
+      &.active {
+        transform: scale(1.1);
+      }
+    }
+
+    .desc-overlay,
+    .title-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .title-overlay{
+      margin-top:50px;
+    }
+    
+
+    &:hover .desc-overlay,
+    &:hover .title-overlay {
+      opacity: 1;
+    }
+  }
+
+
+
+  .slick-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: none;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+
+        &::before {
+          content: none;
+        }
+
+        &:hover {
+          background-color: #ccc;
+        }
+      }
+
+      &.slick-active {
+        button {
+          background-color: #ccc;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 300px;
+  }
+
+  @media (max-width: 576px) {
+    height: 200px;
+  }
+}
+
+.slick-slider {
+
+    overflow-x: hidden !important;
+  
+}
+.slick-dots
+{
+    position: sticky   !important;
+    }
