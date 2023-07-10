@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/ahmedzamzam55/fiver.git/static/css/main.b6fa760f.css",
+    "main.js": "/ahmedzamzam55/fiver.git/static/js/main.95e2dcbe.js",
+    "static/js/787.2520e132.chunk.js": "/ahmedzamzam55/fiver.git/static/js/787.2520e132.chunk.js",
+    "static/media/slick.svg": "/ahmedzamzam55/fiver.git/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/ahmedzamzam55/fiver.git/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/ahmedzamzam55/fiver.git/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/ahmedzamzam55/fiver.git/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/ahmedzamzam55/fiver.git/index.html",
+    "main.b6fa760f.css.map": "/ahmedzamzam55/fiver.git/static/css/main.b6fa760f.css.map",
+    "main.95e2dcbe.js.map": "/ahmedzamzam55/fiver.git/static/js/main.95e2dcbe.js.map",
+    "787.2520e132.chunk.js.map": "/ahmedzamzam55/fiver.git/static/js/787.2520e132.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6fa760f.css",
+    "static/js/main.95e2dcbe.js"
+  ]
+}
